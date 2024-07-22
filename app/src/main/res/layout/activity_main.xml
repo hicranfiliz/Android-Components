@@ -32,4 +32,9 @@
         android:src="@drawable/images"
         android:background="@android:color/holo_purple" />
 
+    <TextView
+        android:layout_width="50dp"
+        android:background="@android:color/holo_red_dark"
+        android:layout_height="150dp"/>
+
 </LinearLayout>
