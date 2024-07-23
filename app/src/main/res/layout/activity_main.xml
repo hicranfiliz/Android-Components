@@ -11,12 +11,9 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_margin="10dp"
-        android:background="@android:color/holo_blue_dark"
         android:gravity="center"
         android:text="hellooo"
+        style="@style/titleText"
         android:textColor="@android:color/background_light"
         android:visibility="visible" />
 
