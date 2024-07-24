@@ -1,6 +1,8 @@
 package com.example.componentsandevents
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -12,6 +14,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val ss : TextView
+        val btnOpenSettingsActivity = findViewById<Button>(R.id.btnOpenSettingsActivity)
+
+        btnOpenSettingsActivity.setOnClickListener {
+            val intent = Intent(this, SettingsActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
